@@ -1,0 +1,19 @@
+/* Animation pour créer un effet d'apparition progressive */
+@keyframes animation_body {
+    from {
+        opacity: 0; /* Commence totalement transparent */
+    }
+    to {
+        opacity: 1; /* Termine totalement opaque */
+    }
+}
+
+/* Applique l'animation au body pour un effet d'apparition au chargement */
+body {
+    animation: animation_body 1s ease-out; /* Définit le nom de l'animation, sa durée et son "timing function" */
+    background-color: white !important;
+}
+
+.text-justify {
+    text-align: justify;
+}

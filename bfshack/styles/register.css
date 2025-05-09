@@ -1,0 +1,19 @@
+/* Définition d'une animation nommée pour faire apparaître progressivement du contenu */
+@keyframes animation_body {
+    from {
+        opacity: 0; /* Au début, l'élément est invisible (transparent) */
+    }
+    to {
+        opacity: 1; /* À la fin, l'élément est complètement visible (opaque) */
+    }
+}
+
+/* Applique l'animation définie précédemment au corps de la page */
+body {
+    animation: animation_body 1s ease-out; /* Nom de l'animation, durée d'une seconde, effet fluide à la fin */
+    background-color: white !important; /* Force la couleur du fond en blanc */
+}
+
+.text-justify {
+    text-align: justify;
+  }

@@ -1,0 +1,123 @@
+/* Style global du corps de la page */
+body {
+     position: relative; 
+}
+
+/* Conteneur principal de la page */
+#page { 
+    /* font-size: 10px !important; */ /* Taille de police  */
+    text-align: center; /* Centre le texte horizontalement */
+    /* margin-top: 6rem; */ /* Marge supérieure  */
+    /* margin-bottom: 300px; */ /* Marge inférieure  */
+    text-decoration: none !important; /* Supprime les décorations du texte (ex : soulignement) */
+}
+
+/* Style du conteneur accordéon global */
+.accordion {
+    max-width: 80vw; /* Largeur maximale de l'accordéon à 80% de la largeur de l'écran */
+    margin: 10px auto; /* Centrage horizontal avec marges verticales */
+    background: #e0e0e0; /* Fond gris clair */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 5px; /* Espacement interne */
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15); /* Ombre légère pour effet de profondeur */
+}
+
+/* Style des items individuels de l'accordéon */
+.accordion-item {
+    background-color: #d0d0d0; /* Fond gris moyen */
+    border: none; /* Suppression des bordures par défaut */
+    margin-bottom: 5px; /* Marge inférieure pour espacer les items */
+    border-radius: 6px; /* Coins arrondis */
+    overflow: hidden; /* Cache tout contenu dépassant */
+}
+
+/* Bouton servant à ouvrir ou fermer les sections de l'accordéon */
+.accordion-button {
+    background-color: #c4c4c4; /* Fond gris clair */
+    color: #222; /* Texte sombre */
+    font-size: 16px; /* Taille de la police */
+    font-weight: 500; /* Poids moyen pour la police */
+    padding: 10px; /* Espacement interne confortable */
+    border: none; /* Supprime la bordure du bouton */
+    transition: background 0.2s ease-in-out; /* Transition fluide de la couleur de fond */
+    border-radius: 6px; /* Coins arrondis du bouton */
+}
+
+/* Effet visuel au survol du bouton accordéon */
+.accordion-button:hover {
+    background-color: #b4b4b4; /* Couleur légèrement plus sombre au survol */
+}
+
+/* Style du bouton lorsqu'une section est ouverte */
+.accordion-button:not(.collapsed) {
+    background-color: #a0a0a0; /* Fond plus sombre */
+    color: black; /* Texte noir */
+    font-weight: bold; /* Texte en gras  */
+}
+
+/* Animation de transition pour l'ouverture/fermeture des sections de l'accordéon */
+.accordion-collapse {
+    transition: all 0.2s ease-in-out; /* Transition rapide et fluide */
+}
+
+/* Corps de chaque section ouverte de l'accordéon */
+.accordion-body {
+    background-color: #e5e5e5; /* Fond très clair */
+    color: #444; /* Texte sombre */
+    padding: 10px; /* Espacement interne modéré */
+    font-size: 14px; /* Taille de texte réduite */
+    line-height: 1.4; /* Espacement entre les lignes */
+    border-radius: 6px; /* Coins arrondis internes */
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.15); /* Ombre interne légère */
+}
+
+/* Icône indiquant l'état (ouvert/fermé) de l'accordéon */
+.accordion-button::after {
+    content: "\f078"; /* Icône de flèche vers le bas (Font Awesome) */
+    font-family: "Font Awesome 5 Free"; /* Police d'icônes Font Awesome */
+    font-weight: 900; /* Gras prononcé pour l'icône */
+    transition: transform 0.2s ease-in-out; /* Transition fluide de rotation */
+    margin-left: auto; /* Icône positionnée à droite */
+    color: #666; /* Couleur grise discrète */
+    font-size: 14px; /* Taille de l'icône */
+}
+
+/* Rotation de l'icône quand la section est ouverte */
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg); /* Rotation de 180 degrés */
+}
+
+/* Classe pour légende mise en avant */
+.legende {
+    font-weight: bold; /* Texte en gras */
+    font-size: 1.5em; /* Taille augmentée */
+}
+
+/* Centrage du texte dans les tableaux (cellules et entêtes) */
+.table th, .table td {
+    text-align: center; /* Centre horizontalement */
+    vertical-align: middle; /* Centre verticalement */
+}
+
+/* Style pour les titres h2 personnalisés */
+.titresh2 {
+    display: inline-block; /* Élément pouvant avoir marges et padding */
+    padding: 10px 20px; /* Espacement interne */
+    border: 2px solid #333; /* Bordure noire  */
+    border-radius: 5px; /* Coins légèrement arrondis */
+    font-weight: bold; /* Texte en gras */
+    background-color: #f9f9f9; /* Fond clair */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Ombre externe légère */
+}
+
+/* Style du titre principal h1 */
+h1 {
+    color: black; /* Texte noir */
+    text-align: center; /* Centre le texte horizontalement */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre portée */
+}
+
+.text-justify {
+    text-align: justify;
+  }
+

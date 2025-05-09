@@ -1,0 +1,14 @@
+#navbar-footer {
+    background-color: rgb(219, 219, 219) !important; /* Fond gris clair, prioritaire sur les autres styles */
+    border-top: 1px solid #6e6d6d; /* Bordure supérieure grise foncée d'un pixel */
+    font-size: 15px !important; /* Taille du texte fixée à 15px, prioritaire */
+    border-top-left-radius: 50px; /* Arrondi le coin supérieur gauche du bloc */
+    border-top-right-radius: 50px; /* Arrondi le coin supérieur droit du bloc */
+}
+
+/* Règles appliquées uniquement sur les petits écrans */
+@media (max-width: 767.98px) {
+    .fs-xs { 
+        font-size: 0.6rem; /* Taille du texte très petite */
+    }
+}

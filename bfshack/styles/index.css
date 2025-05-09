@@ -1,0 +1,95 @@
+/* style du formulaire d'upload */
+.formulaire {
+    padding: 20px; /* Ajoute un peu d'espace autour du formulaire */
+    /* border: 1px solid #ccc; /* Ajoute une bordure légère */
+    border-radius: 5px; /* Arrondit les coins */
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+}
+
+/* Style appliqués à tous les éléments de formulaire de l'index */
+.form-bouton, .form-texte, .form-selection {
+    text-align: center; /* Centre le texte */
+    margin: 20px auto; /* Ajoute une marge supérieure et inférieure, et centre horizontalement */
+    display: block; /* Force l'élément à s'afficher comme un bloc */
+    font-size: 36px; /* Taille de police de 18 px */
+    border-radius: 30px; /* Arrondit les coins */
+    padding: 15px 25px; /* Ajoute un padding (remplissage) */
+    transition: all 0.3s ease; /* Anime les changements de propriété */
+    border: none; /* Supprime les bordures par défaut */
+}
+
+/* Style du texte "Sélectionnez une image" du formulaire de l'index */
+.form-texte {
+    background-color: #eff0f3; /* Couleur de fond neutre */
+    color: #333; /* Couleur de texte foncée  */
+    box-shadow: 4px 4px 10px #cbced1, -4px -4px 10px white; /* Ombres douces, effet de profondeur */
+    cursor: pointer; /* Change le curseur en main */
+    display: block; /* Important pour que width: 100% fonctionne */
+    margin-bottom: 10px; /* Ajoute un espace sous le label */
+}
+
+/* Effet de survol "Sélectionnez une image" du texte du formulaire de l'index */
+.form-texte:hover {
+    background-color: #e2e3e9; /* Assombrit légèrement la couleur de fond au survol */
+}
+
+/* Bouton "Envoyer" du formulaire de l'index */
+.form-bouton {
+    background: linear-gradient(145deg, #ff8a8a, #ffbbbb); /* Gradiant linéraire : transion entre deux couleurs */
+    color: #fff; /* Définit la couleur du texte en blanc */
+    box-shadow: 4px 4px 10px #cbced1, -4px -4px 10px white; /* Ajout d'ombres */
+    font-weight: 600; /* Rend le texte un peu plus épais */
+    cursor: pointer; /* Change le curseur en main */
+    transition: all 0.4s linear;
+    filter: brightness(1); /* Niveau de luminosité normal */
+}
+
+@keyframes flash {
+    0%, 100% {
+        filter: brightness(1); /* Normal */
+        transform: scale(1);
+    }
+    50% {
+        filter: brightness(1.3); /* Plus lumineux */
+        transform: scale(1.03); /* 3% de grossissement */
+    }
+}
+
+.form-bouton.active {
+    animation: flash 1s infinite linear; /* 1 seconde pour un aller-retour, en boucle */
+}
+
+/*Effet de survol du bouton "Envoyer" du formulaire de l'index */
+ .form-bouton:hover {
+    background: linear-gradient(145deg, #ff7878, #ffcccc); /* Gradiant linéraire : transion entre deux couleurs */
+    transform: translateY(-5px); /* Déplace légèrement le bouton vers le haut */
+    box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #ffffff; /* Ajuste l'ombre pour renforcer l'effet de survol */
+}
+
+/* Rend l'élément de sélection de fichier invisible du formulaire de l'index */
+.form-selection {
+    opacity: 0; /* Rend invisible */
+}
+
+/* Animation, apparition douce de la page */
+@keyframes animation_body {
+    from {
+        opacity: 0; /* Commence totalement transparent */
+    }
+    to {
+        opacity: 1; /* Termine totalement opaque */
+    }
+}
+
+/* Applique l'animation au body pour un effet d'apparition au chargement */
+body {
+    animation: animation_body 1s ease-out; /* Définit le nom de l'animation, sa durée et son "timing function" */
+    background-color: white !important;
+}
+
+/* Media query pour les écrans plus petits */
+@media (max-width: 767.98px) {
+    .formulaire {
+        padding: 15px; /* Réduit le padding sur les petits écrans */
+    }
+}

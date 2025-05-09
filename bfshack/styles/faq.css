@@ -1,0 +1,63 @@
+/* Animation pour créer une apparition progressive */
+@keyframes animation_body {
+    from {
+        opacity: 0; /* Au début, l'élément est invisible (transparent) */
+    }
+    to {
+        opacity: 1; /* À la fin, l'élément est complètement visible */
+    }
+}
+
+/* Style général */
+body {
+    animation: animation_body 1s ease-out; /* Utilise l'animation créée, dure 1 seconde, effet progressif (ease-out) */
+    background-color: white !important; /* Force la couleur de fond en blanc */
+    font-family: 'Arial', sans-serif; /* Police d'écriture principale : Arial ou équivalent */
+    color: #333; /* Couleur du texte : gris foncé */
+    line-height: 1.6; /* Espacement entre les lignes */
+    padding: 20px; /* Espace intérieur */
+    margin: 0; /* Supprime les marges par défaut du navigateur */
+    background-color: #f4f4f4; /* Fond gris clair par défaut */
+}
+
+/* Style appliqué au h1 */
+h1 {
+    color: black; /* Couleur du texte en noir */
+    text-align: center; /* Centre le texte horizontalement */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ajoute une ombre douce */
+}
+
+/* Style appliqué au texte d'introduction (id="intro") */
+#intro {
+    margin-bottom: 50px; /* Grande marge en bas  */
+    text-align: center; /* Texte centré horizontalement */
+    font-size: 18px; /* Taille de texte  */
+    
+}
+
+/* Style appliqué aux sous-titres h2 */
+h2 {
+    font-size: 22px; /* Taille de police un peu plus grande*/
+    color: black; /* Couleur noire */
+    border-bottom: 1px solid #212121; /* Ligne noire sous le sous-titre */
+    padding-bottom: 5px; /* Petit espace entre le texte et la ligne */
+    margin-top: 30px; /* Marge au-dessus pour bien espacer les sous-titres du reste */
+}
+
+/* Style général des paragraphes p */
+p {
+    font-size: 16px; /* Taille standard pour les paragraphes */
+    margin: 10px 0 20px 0; /* Marges : haut 10px, bas 20px, côtés 0 */
+}
+
+/* Ajoute des styles supplémentaires */
+#texte {
+    color: #212121; /* Texte très sombre, presque noir */
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+.ligne-separatrice-h1 {
+    border-bottom: 1px solid #212121; /* Trait noir fin */
+    width: 10%; /* Ajuste selon ton goût */
+    margin: 0.4em auto; /* Espace et centrage */
+}

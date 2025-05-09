@@ -1,0 +1,44 @@
+#navbar-top {
+    background-color: rgb(219, 219, 219) !important; /* Couleur de fond gris clair (prioritaire) */
+    border-bottom: 1px solid #6e6d6d; /* Bordure inférieure grise foncée d'1 pixel */
+    font-size: 15px !important; /* Taille du texte fixée à 15 pixels (prioritaire) */
+    border-bottom-left-radius: 50px; /* Arrondit le coin inférieur gauche */
+    border-bottom-right-radius: 50px; /* Arrondit le coin inférieur droit */
+    transition: filter 0.5s linear; /* Transition fluide pour les effets visuels, dure 0.5 seconde */
+    filter: brightness(100%); /* Luminosité normale */
+}
+
+/* Effet quand on passe la souris sur l'élément */
+#boutonmenu:hover {
+    transition: filter 0.5s linear; /* Transition douce pendant 0.5 seconde */
+    filter: brightness(80%); /* Luminosité réduite à 80% (effet sombre au survol) */
+}
+
+/* Style normal pour le bouton */
+#boutonmenu {
+    transition: filter 0.5s linear; /* Transition fluide de luminosité (0.5 seconde) */
+    filter: brightness(100%); /* Luminosité normale */
+    transform: translateX(30px); /* Décale l'élément de 30 pixels vers la droite */
+    font-size: 10px; /* Taille de texte à 10 pixels */
+}
+
+/* Style appliqué au texte du logo ("bfshack") et aux liens dans ce logo */
+.logotexte, .logotexte a {
+    text-decoration: none; /* Retire tout soulignement des liens */
+    color: #333; /* Couleur gris foncé du texte */
+    /* transition: filter 0.5s linear; */ /* Transition désactivée  */
+    filter: brightness(100%); /* Luminosité normale */
+    font-size: 20px !important; /* Taille du texte fixée à 20 pixels (prioritaire) */
+    transition: transform 0.3s ease-in-out; /* Animation douce (0.3 seconde) en cas de transformation */
+}
+
+/* Effet quand on passe la souris sur le texte du logo */
+.logotexte:hover, .logotexte a:hover {
+    color: #333; /* Garde la même couleur gris foncé au survol */
+    transform: scale(1.3); /* Agrandit le texte à 130% de sa taille au survol */
+}
+
+/* Cache la petite flèche vers le bas des menus déroulants Bootstrap */
+.btn.dropdown-toggle::after {
+    display: none; /* Supprime la flèche qui apparaît par défaut après le bouton */
+}

@@ -1,0 +1,34 @@
+/* Définition d'une animation */
+@keyframes animation_body {
+    from { /* État initial de l'animation */
+        opacity: 0; /* L'élément est totalement transparent au début */
+    }
+    to { /* État final de l'animation */
+        opacity: 1; /* L'élément devient complètement visible à la fin */
+    }
+}
+
+/* Applique l'animation au body pour un effet d'apparition au chargement */
+body {
+    animation: animation_body 1s ease-out; /* Définit le nom de l'animation, sa durée et son "timing function" */
+    background-color: white !important; /* Fond clair */
+}
+
+h1 {
+    color: black; /* Texte noir */
+    text-align: center; /* Titre centré horizontalement */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre légère */       
+}
+
+.texte-abus {
+    color: black; /* Texte noir */
+    text-align: center; /* Titre centré horizontalement */
+    border-bottom: 1px solid #212121; /* Ligne fine noire  */
+    padding-bottom: 20px; /* Espace en bas du titre */
+}
+
+.ligne-separatrice {
+    border-bottom: 1px solid #212121; /* Trait noir fin */
+    width: 20%; /* Ajuste selon ton goût */
+    margin: 0.8em auto; /* Espace et centrage */
+}
